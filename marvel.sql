@@ -66,7 +66,8 @@ SELECT name from people WHERE name LIKE 'Homer%';
 DELETE from movies WHERE title = 'Batman Begins';
 SELECT * from movies;
 -- Q6:We forgot one of the main characters! Add Bart Simpson to the 'people' table
-
+INSERT INTO people (name) VALUES ('Bart Simpson');
+SELECT * from people;
 -- Q7:Eric Cartman has decided to hijack our movie evening, Remove him from the table of people.
 
 -- Q8:The cinema has just heard that they will be holding an exclusive midnight showing of 'Avengers: Infinity War'!! Create a new entry in the 'movies' table to reflect this.
