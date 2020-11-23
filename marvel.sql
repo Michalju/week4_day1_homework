@@ -51,11 +51,13 @@ INSERT INTO movies (title, year, show_time) VALUES ('Thor: Ragnarok', 2017, '22:
 INSERT INTO movies (title, year, show_time) VALUES ('Black Panther', 2018, '21:00');
 
 
--- Q1 Return ALL the data in the 'movies' table.
+-- Q1: Return ALL the data in the 'movies' table.
 SELECT * from movies;
--- Return ONLY the name column from the 'people' table
+-- Q2: Return ONLY the name column from the 'people' table
 SELECT name from people;
--- Oops! Someone spelled Krusty The Clown's name wrong! Change it to reflect the proper spelling (Crusty should be Krusty).
+-- Q3: Oops! Someone spelled Krusty The Clown's name wrong! Change it to reflect the proper spelling (Crusty should be Krusty).
+UPDATE people SET name = 'Krusty the Clown' WHERE name = 'Crusty the Clown';
+SELECT * from people;
 -- Return ONLY Homer Simpson's name from the 'people' table.
 -- The cinema is showing 'Batman Begins', but Batman is DC, not Marvel! Delete the entry from the 'movies' table.
 -- We forgot one of the main characters! Add Bart Simpson to the 'people' table
