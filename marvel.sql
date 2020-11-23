@@ -78,3 +78,9 @@ SELECT * from movies;
 SELECT * from movies where title = 'Iron Man 2' ;
 UPDATE movies SET show_time = '20:45' WHERE title = 'Iron Man 3';
 SELECT * from movies;
+-- Extension: delete all iron man movies
+DELETE from movies WHERE title = 'Iron Man' OR title = 'Iron Man 2' OR title = 'Iron Man 3';
+SELECT * from movies;
+-- Extension: delete all Captain America movies
+DELETE from movies WHERE title LIKE 'Captain America%';
+SELECT * from movies;
